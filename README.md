@@ -2,6 +2,8 @@
 
 This is a structured template repository designed specifically for research projects. It provides a well-organized framework that can be used as a starting point for any new research project. The template includes directories for analyses, documents, images, manuscripts, measurements, etc., each with its own set of relevant subdirectories and files. The use of emojis provides a visual guide to the type of content in each file, making it easy to navigate and understand the project structure. By using this template, you can ensure a consistent and efficient organization of research project, thereby facilitating better collaboration and understanding among team members.
 
+### General structure
+
 ```
 📚 project_template
 │
@@ -22,7 +24,6 @@ This is a structured template repository designed specifically for research proj
 │   ├── 📊 design.xlsx
 │   ├── 📊 plant_labels.xlsx
 │   ├── 📄 protocols.docx
-│   ├── 📄 administration.docx
 │   └── 📄 ...
 │
 ├── 📂 documentation
@@ -38,46 +39,44 @@ This is a structured template repository designed specifically for research proj
 │       ├── 📂 photos
 │       │   ├── 🖼️ photo_1.jpg
 │       │   └── 🖼️ ...
+│       ├── 📄 administration.docx
 │       ├── 📄 fun_facts.docx
 │       └── 📊 ...
 │
-├── 📂 images (see: [Specifics](#specifics))
-│   ├── 📂 YY_MM_DD_LOC
-│   │   ├── 🖼️ image_1.hdr
-│   │   └── 🖼️ ...
-│   └── 📂 ...
-│ 
-└── 📂 measurements
-   ├── 📂 GPS
-   │   ├── 📝 YY_MM_DD_LOC_coordinates_plants.txt
-   │   └── 📝 ...
-   ├── 📂 LiCor
-   │   ├── 📊 YY_MM_DD_LOC_potato_plants.xlsx
-   │   └── 📊 ...
-   ├── 📂 LAI                
-   │   ├── 📊 YY_MM_DD_LOC_maize_plants.xlsx
-   │   └── 📊 ...
-   └── 📂 ...
- 
-
-```
-
-### Specifics
-
-if in the same experiment both hyperspectral and multispectral images are used use this structure for images instead
-
-```
-...
 ├── 📂 images
-│   ├── 📂 multispectral
+│   ├── 📂 multispectral 
 │   │   ├── 📂 YY_MM_DD_LOC
 │   │   │   ├── 🖼️ image_1.tif
 │   │   │   └── 🖼️ ...
 │   │   └── 📂 ...
-│   └── 📂 hyperspectral
+│   └── 📂 hyperspectral 
 │       ├── 📂 YY_MM_DD_LOC
+│       │    ├── 📂 radiance
+│       │    │   └── 🖼️ image_1.hdr
 │       │    ├── 🖼️ image_1.hdr
 │       │    └── 🖼️ ...
 │       └── 📂 ...
-...
+│ 
+└── 📂 measurements
+    ├── 📂 GPS
+    │   ├── 📝 YY_MM_DD_LOC_coordinates_plants.txt
+    │   └── 📝 ...
+    ├── 📂 LiCor
+    │   ├── 📊 YY_MM_DD_LOC_potato_plants.xlsx
+    │   └── 📊 ...
+    ├── 📂 LAI                
+    │   ├── 📊 YY_MM_DD_LOC_maize_plants.xlsx
+    │   └── 📊 ...
+    └── 📂 ...
+ 
+
 ```
+
+> **Note:** In the directory `YY_MM_DD_LOC` is a placeholder where:
+>
+> - `YY` stands for the two-digit year of the experiment.
+> - `MM` stands for the two-digit month of the experiment.
+> - `DD` stands for the two-digit day of the experiment.
+> - `LOC` stands for the location of the experiment.
+>
+> For example, a directory named `22_03_15_FieldA` would represent an experiment conducted on March 15, 2022, at location 'FieldA'.
