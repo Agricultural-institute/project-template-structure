@@ -2,6 +2,15 @@
 
 This is a structured template repository designed specifically for research projects. It provides a well-organized framework that can be used as a starting point for any new research project. The template includes directories for analyses, documents, images, manuscripts, measurements, etc., each with its own set of relevant subdirectories and files. The use of emojis provides a visual guide to the type of content in each file, making it easy to navigate and understand the project structure. By using this template, you can ensure a consistent and efficient organization of research project, thereby facilitating better collaboration and understanding among team members.
 
+To use this project template, follow these steps:
+
+1. Navigate to the [releases](https://github.com/Agricultural-institute/project-template-structure/releases) page of this repository.
+2. Select the most recent release.
+3. Look for the `project_template.zip` file in the assets section of the release.
+4. Click on `project_template.zip` to download the file.
+
+Once downloaded, you can unzip the file to access the project template.
+
 ### General structure
 
 ```
@@ -11,6 +20,7 @@ This is a structured template repository designed specifically for research proj
 │
 ├── 📂 processing
 │   ├── 📂 Pix4D
+│   │   ├── 📂 YY_MM_DD_LOC
 │   │   └── 📂 ...
 │   ├── 📂 GIS
 │   │   ├── 📂 YY_MM_DD_LOC
